@@ -292,11 +292,38 @@ a{
     color: #d6d2d2;
 }
 
+.order-container{
+    
+    padding:30px;
+    display: flex;
+    justify-content: center;
+}
+form{
+    border: 2px solid black;
+    padding: 20px;
+    width:80vw;
+    
+}
+form h1{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.form-container{
+    padding:40px 10px 20px;
+}
+
 footer {
     background-color: #684627;
     margin: 0;
     padding: 20px 20px 40px 20px;
 
+}
+label{
+    display: block;
+    display: flex;
+    padding:10px
 }
 
 .links-container {
