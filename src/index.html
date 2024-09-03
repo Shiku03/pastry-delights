@@ -3,15 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pastry Delights</title>
 </head>
 <body>
-    <div class="content">
-       <h1>Pastry Delights</h1>
-       <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit</h2>
-       <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
-    </div>
+    <nav id="sidenav">
+        <div class="sidenav">
+            <ul>
+                <li onclick="closeSidenav()" class="close">X</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="careers.html">Careers</a></li>
+            </ul>
+
+            <footer>Copyright 2024. All rights Reserved</footer>
+        </div>
+       
+    </nav>
+    <div id="content">
+        <div class="menu-bar" onclick="showSidenav()">Menu</div>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="images/blueberry muffins.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <span id="prev" class="prev" onclick="showPrevious()">&#10094</span>
+            <span id="next" class="next" onclick="showNext()">&#10095</span>
+
+           
+
+                
+                    <img src="images/blueberry muffins.jpg" alt="">
+                
     
+                <!--
+                    <img src="images/bread.jpg" alt="">
+               
+    
+               
+                    <img src="images/coloured cookies.jpg" alt="">
+                
+        -->
+           
+           
+        </div>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis tenetur voluptatem voluptatum, quasi quia facere nobis quos natus unde perferendis dolorum in iusto similique vel officia, maiores id magnam asperiores?</p>
+            <br> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ullam sint iure, libero quo magnam voluptate velit adipisci perferendis sapiente eaque non qui excepturi. Culpa nemo odit ipsa possimus odio?</p>
+            <br> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quaerat optio. Exercitationem, quae pariatur corrupti similique harum asperiores blanditiis neque odio consectetur fuga dolore modi tenetur repudiandae perferendis dignissimos provident.</p>
+
+            <br>  <br>
+        </div>
+    </div>
+   <footer>Copyright 2024. All rights Reserved</footer>
+         
+    <script src="script.js"></script>
 </body>
 </html>

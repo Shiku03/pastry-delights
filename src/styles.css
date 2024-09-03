@@ -1,0 +1,705 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@media(max-width:500px){
+    html{
+        font-size:16px;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    body {
+        background-color: #1d0e04;
+        position:relative;
+    }
+    nav{
+        display:none;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+    .sidenav{
+        background-color: #1a0c03;
+        height:100%;
+        width:50vw;
+    }
+    .menu{
+        position:absolute;
+        z-index:1;
+        top:0;
+        left:0;
+        width:50vw;
+        height:100vh;
+        display: block;
+    }
+    .overlay{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: linear-gradient(#2a1516, #2a2a15);
+    }
+    nav ul li, .categories ul li {
+        list-style-type: none;
+        padding:16px;
+    }
+    nav ul li:hover, .categories ul li:hover{
+        background-color:#0c0500;
+    }
+    
+    nav ul li a, .categories ul li a{
+        text-decoration: none;
+        color:#8f896c;
+    }
+    
+    nav ul li.close{
+        color:#8f896c;
+        text-align: right;
+    padding-right:20px;
+    }
+    .menu-bar {
+        color:#8f896c;
+        padding:12px;
+    }
+    .logo-container{
+        height:100px;
+        width:100vw;
+        margin:20px 0;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        height:100%;
+        width:100px;
+        border-radius:50%;
+    }
+    .logo img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        border-radius:50%;
+    }
+    .content{
+        padding:10px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+     p{
+        color:#8f896c;
+    }
+    footer{
+        color:#807a5f;
+        display: flex;
+        justify-content: center;
+        font-size:0.8rem;
+    }
+    nav footer{
+        color:#807a5f;
+        display: flex;
+        justify-content: center;
+        font-size:0.8rem;
+        position:fixed;
+        bottom:100px;
+    }
+    .slide-container{
+        width:100vw;
+        height:150px;
+        margin:10px 0;
+       
+       overflow:hidden;
+        position:relative;
+    }
+    
+   
+    .slide-container img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .slide-container .prev{
+        position:absolute;
+        top:60px;
+        left:10px;
+        color:grey;
+    }
+    .slide-container .next{
+        position:absolute;
+        top:60px;
+        right:10px;
+        color:grey;
+    }
+.slide-container .prev:hover{
+    color:black;
+    text-shadow: -2px 0 4px black;
+}
+.slide-container .next:hover{
+    color:black;
+    text-shadow: 2px 0 4px black;
+}
+.categories {
+    width:100vw;
+    display:flex;
+}
+.categories ul li a:active{
+    color:#e7e4e1;
+
+}
+.categories-list{
+    width:40%;
+}
+
+.categories-images{
+    width:50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding:4px;
+}
+.categories-images img{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+    border-radius:6px;
+}
+.card {
+    text-align: center;
+}
+.products, .careers{
+    text-align: center;
+    text-transform: uppercase;
+    margin:12px 0;
+    color:#9b9575;
+   
+}
+.categories.product-page{
+    display: block;
+}
+.categories-list.horizontal-menu{
+    width:100vw;
+    text-align: center;
+    margin-bottom:12px;
+}
+
+.categories-list.horizontal-menu ul li {
+    display: inline;
+    font-size: 1.1rem;
+}
+.categories.product-page .categories-images{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding:8px;
+}
+h2.products{
+    color:#8a895b;
+    font-size:1.2rem;
+    margin-bottom:0;
+    font-weight: 600;
+}
+.career-card{
+    width:100vw;
+    padding:20px;
+    display:flex;
+}
+.career-info{
+    width:50%;
+    padding:10px;
+    flex-grow: 1;
+}
+.career-info h2{
+    margin:10px;
+    color: #9b9575;
+}
+.career-info p{
+    padding:4px;
+    font-size: 0.9rem;
+}
+.career-photo{
+    width:180px;
+    height:180px;
+}
+.career-photo img {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+}
+@media(min-width:500px) and (max-width:850px){
+
+    html{
+        font-size:16px;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    body {
+        background-color: #1d0e04;
+        position:relative;
+    }
+    nav{
+        display:none;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+    .sidenav{
+        background-color: #1a0c03;
+        height:100%;
+        width:40vw;
+    }
+    .menu{
+        position:absolute;
+        z-index:1;
+        top:0;
+        left:0;
+        width:50vw;
+        height:100vh;
+        display: block;
+    }
+    .overlay{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: linear-gradient(#2a1516, #2a2a15);
+    }
+    nav ul li, .categories ul li {
+        list-style-type: none;
+        padding:16px;
+    }
+    nav ul li:hover, .categories ul li:hover{
+        background-color:#0c0500;
+    }
+    
+    nav ul li a, .categories ul li a{
+        text-decoration: none;
+        color:#8f896c;
+    }
+    
+    nav ul li.close{
+        color:#8f896c;
+        text-align: right;
+    padding-right:20px;
+    }
+    .menu-bar {
+        color:#8f896c;
+        padding:12px;
+    }
+    .logo-container{
+        height:100px;
+        width:100vw;
+        margin:20px 0;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        height:100%;
+        width:100px;
+        border-radius:50%;
+    }
+    .logo img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        border-radius:50%;
+    }
+    .content{
+        padding:10px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+     p{
+        color:#8f896c;
+    }
+    footer{
+        color:#807a5f;
+        display: flex;
+        justify-content: center;
+        font-size:0.8rem;
+    }
+    nav footer{
+        color:#807a5f;
+        display: flex;
+        justify-content: center;
+        font-size:0.8rem;
+        position:fixed;
+        bottom:100px;
+    }
+    .slide-container{
+        width:100vw;
+        height:200px;
+        margin:10px 0;
+       overflow:hidden;
+        position:relative;
+    }
+    
+   
+    .slide-container img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .slide-container .prev{
+        position:absolute;
+        top:60px;
+        left:10px;
+        color:grey;
+    }
+    .slide-container .next{
+        position:absolute;
+        top:60px;
+        right:10px;
+        color:grey;
+    }
+.slide-container .prev:hover{
+    color:black;
+    text-shadow: -2px 0 4px black;
+}
+.slide-container .next:hover{
+    color:black;
+    text-shadow: 2px 0 4px black;
+}
+.categories {
+    width:100vw;
+    display:flex;
+}
+.categories ul li a:active{
+    color:#e7e4e1;
+
+}
+.categories-list{
+    width:35%;
+}
+
+.categories-images{
+    width:50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding:4px;
+}
+.categories-images img{
+    width:120px;
+    height:120px;
+    object-fit: cover;
+    border-radius:6px;
+}
+.card {
+    text-align: center;
+}
+.products, .careers{
+    text-align: center;
+    text-transform: uppercase;
+    margin:12px 0;
+    color:#9b9575;
+   
+}
+.categories.product-page{
+    display: block;
+}
+.categories-list.horizontal-menu{
+    width:100vw;
+    text-align: center;
+    margin-bottom:12px;
+}
+
+.categories-list.horizontal-menu ul li {
+    display: inline;
+    font-size: 1.1rem;
+}
+.categories.product-page .categories-images{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding:8px;
+}
+h2.products{
+    color:#8a895b;
+    font-size:1.2rem;
+    margin-bottom:0;
+    font-weight: 600;
+}
+.career-card{
+    width:100vw;
+    padding:20px;
+    display:flex;
+}
+.career-info{
+    width:50%;
+    padding:10px;
+    flex-grow: 1;
+}
+.career-info h2{
+    margin:10px;
+    color: #9b9575;
+}
+.career-info p{
+    padding:4px;
+    font-size: 0.9rem;
+}
+.career-photo{
+    width:180px;
+    height:180px;
+}
+.career-photo img {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+}
+@media(min-width:850px){
+    
+
+    html{
+        font-size:16px;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    body {
+        background-color: #1d0e04;
+        position:relative;
+        overflow-x: hidden;
+    }
+    nav{
+        display:none;
+    }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+    .sidenav{
+        background-color: #1a0c03;
+        height:100%;
+        width:40vw;
+    }
+    .menu{
+        position:absolute;
+        z-index:1;
+        top:0;
+        left:0;
+        width:50vw;
+        height:100vh;
+        display: block;
+    }
+    .overlay{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: linear-gradient(#2a1516, #2a2a15);
+    }
+    nav ul li, .categories ul li {
+        list-style-type: none;
+        padding:16px;
+    }
+    nav ul li:hover, .categories ul li:hover{
+        background-color:#0c0500;
+    }
+    
+    nav ul li a, .categories ul li a{
+        text-decoration: none;
+        color:#8f896c;
+    }
+    
+    nav ul li.close{
+        color:#8f896c;
+        text-align: right;
+    padding-right:20px;
+    }
+    .menu-bar {
+        color:#8f896c;
+        padding:12px;
+    }
+    .logo-container{
+        height:100px;
+        width:100vw;
+        margin:20px 0;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        height:100%;
+        width:100px;
+        border-radius:50%;
+    }
+    .logo img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        border-radius:50%;
+    }
+    .content{
+        padding:10px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+     p{
+        color:#8f896c;
+    }
+    footer{
+        color:#807a5f;
+        display: flex;
+        justify-content: center;
+        font-size:0.8rem;
+    }
+    nav footer{
+        color:#807a5f;
+        display: flex;
+        justify-content: center;
+        font-size:0.8rem;
+        position:fixed;
+        bottom:100px;
+    }
+    .slide-container{
+        width:100vw;
+        height:250px;
+        margin:10px 0;
+       overflow:hidden;
+        position:relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+   
+    .slide-container img{
+        width:80%;
+        height:100%;
+        object-fit:cover;
+    }
+    .slide-container .prev{
+        position:absolute;
+        top:100px;
+        left:120px;
+        color:grey;
+    }
+    .slide-container .next{
+        position:absolute;
+        top:100px;
+        right:120px;
+        color:grey;
+    }
+.slide-container .prev:hover{
+    color:black;
+    text-shadow: -2px 0 4px black;
+}
+.slide-container .next:hover{
+    color:black;
+    text-shadow: 2px 0 4px black;
+}
+.categories {
+    width:100vw;
+    display:flex;
+}
+.categories ul li a:active{
+    color:#e7e4e1;
+
+}
+.categories-list{
+    width:25%;
+}
+
+.categories-images{
+  flex-grow:1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding:4px;
+}
+.categories-images img{
+    width:160px;
+    height:160px;
+    object-fit: cover;
+    border-radius:6px;
+    margin-bottom: 10px;
+}
+.card {
+    text-align: center;
+}
+.products, .careers{
+    text-align: center;
+    text-transform: uppercase;
+    margin:12px 0;
+    color:#9b9575;
+   
+}
+.categories.product-page{
+    display: block;
+}
+.categories-list.horizontal-menu{
+    width:100vw;
+    text-align: center;
+    margin-bottom:12px;
+}
+
+.categories-list.horizontal-menu ul li {
+    display: inline;
+    font-size: 1.1rem;
+}
+.categories.product-page .categories-images{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding:8px;
+}
+h2.products{
+    color:#8a895b;
+    font-size:1.2rem;
+    margin-bottom:0;
+    font-weight: 600;
+}
+.career-card{
+    padding:20px;
+    display:flex;
+}
+.career-info{
+    width:50%;
+    padding:10px;
+    flex-grow: 1;
+}
+.career-info h2{
+    margin:10px;
+    color: #9b9575;
+}
+.career-info p{
+    padding:4px;
+    font-size: 0.9rem;
+}
+.career-photo{
+    width:180px;
+    height:180px;
+}
+.career-photo img {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+.careers-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+}
